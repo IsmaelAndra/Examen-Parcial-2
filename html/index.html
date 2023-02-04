@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous" ></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../img/logo-pequeño.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="../img/logo.jpg" alt="" class="logo">
+            </div>
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="./inicio.html">INICIO</a></li>
+                <li><a href="./acerca.html">ACERCA</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+                <li><a><button id="btn-registro">Registro</button></a></li>
+                <li><button id="btn-login">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+    <dialog class="ventana-login" id="ventana-login">
+        <div class="contenedor-login" id="contenedor-login">
+            <h1 class="titulo-login">Login</h1>
+            <button id="btn-cerrar-login" class="btn-cerrar-login">X</button>
+            <form action="" class="form-login" id="form-login">
+                <label for="input-usuario" class="label-usuario">Usuario: </label>
+                <input type="text" name="input-usuario" class="input-usuario" id="input-usuario">
+                <label for="input-contrasenia" class="label-contrasenia">Contraseña: </label>
+                <input type="password" name="input-contrasenia" class="input-contrasenia" id="input-contrasenia">
+                <p class="p-Contrasenia-Olvidada">
+                    <a id="btn-Contrasenia-Olvidada" class="btn-Contrasenia-Olvidada">¿Has olvidado la contraseña?</a>
+                </p>
+                <p class="p-Aun-No-Registrado">
+                    <a id="btn-Aun-No-Registrado" class="btn-Aun-No-Registrado">Aun no te has registrado</a>
+                </p>
+                <button class="btn-Iniciar-Sesion" id="btn-Iniciar-Sesion">Iniciar Sesión</button>
+            </form>
+        </div>
+    </dialog>
+    <dialog class="ventana-registro" id="ventana-registro">
+        <div class="contenedor-registro" id="contenedor-registro">
+            <h1 class="titulo-registro">Registro</h1>
+            <button id="btn-cerrar-registro" class="btn-cerrar-registro">X</button>
+            <form action="" class="form-registro" id="form-registro">
+                <div class="nombres" id="nombres">
+                    <div class="nombre-div" id="nombre-div">
+                        <label for="input-nombre" class="label-nombre">Nombre: </label>
+                        <input type="text" name="input-nombre" class="input-nombre" id="input-nombre">
+                    </div>
+                    <div class="apellido-div" id="apellido-div">
+                        <label for="input-apellido" class="label-apellido">Apellido: </label>
+                        <input type="text" name="input-nombre" class="input-nombre" id="input-nombre">
+                    </div>
+                </div>
+                <div class="datos" id="datos">
+                    <div class="usuario-div" id="usuario-div">
+                        <label for="input-usuario-registro" class="label-usuario-registro">Usuario: </label>
+                        <input type="text" name="input-usuario-registro" class="input-usuario-registro" id="input-usuario-registro">
+                    </div>
+                    <div class="edad-div" id="edad-div">
+                        <label for="input-edad" class="label-edad">Edad: </label>
+                        <input type="number" name="input-edad" class="input-edad" id="input-edad" min="18" value="18">
+                    </div>
+                    <div class="genero-div" id="genero-div">
+                        <label for="select-genero" class="label-genero">Genero: </label>
+                        <select name="select-genero" id="select-genero" class="select-genero">
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="input-correo" class="label-correo">Correo Electronico: </label>
+                <input type="email" name="input-correo" class="input-correo" id="input-correo">
+                <label for="input-contrasenia-registro" class="label-contrasenia-registro">Contraseña: </label>
+                <input type="password" name="input-contrasenia-registro" class="input-contrasenia-registro" id="input-contrasenia-registro">
+                <label for="input-contrasenia-repetir" class="label-contrasenia-repetir">Repetir contraseña: </label>
+                <input type="password" name="input-contrasenia-repetir" class="input-contrasenia-repetir" id="input-contrasenia-repetir">
+                <button class="btn-registrarse" id="btn-registrarse">Registrarse</button>
+            </form>
+        </div>
+    </dialog>
+    <div class="container">
+        <div class="slides">
+          <div class="slide">
+            <img src="../img/publicidad-1.jpg" alt="" />
+            <div class="slide-content">
+            </div>
+          </div>
+          <div class="slide">
+            <img src="../img/publicidad-2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../img/publicidad-3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../img/publicidad-4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="slide-controls">
+          <button id="prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <footer>
+        <div class="left-redes">
+            <h6 class="correo"><a href="https://mail.google.com/" target="_blank"><img src="../img/correo.jpg" alt="" width="30px" height="30px"> kfcadomicilio@kfc.com.ec</a>
+            </h6>
+        </div>
+        <div class="center-redes">
+            <h6 class="facebook"><a href="https://www.facebook.com/KFCECUADOR/?hc_ref=SEARCH&fref=nf&brand_redir=82034284246" target="_blank"><img src="../img/facebook.jpg" alt="" width="30px" height="30px"> KFC</a></h6>
+        </div>
+        <div class="right-redes">
+            <h6 class="instagram"><a href="https://www.instagram.com/kfcecuador/" target="_blank"><img src="../img/instagram.jpg" alt="" width="30px" height="30px"> 
+                kfcecuador</a></h6>
+        </div>
+        <div class="right2-redes">
+            <h6 class="twitter"><a href="https://twitter.com/kfcecuador" target="_blank"><img src="../img/twitter.jpg" alt="" width="30px" height="30px"> KFCEcuador
+            </a></h6>
+        </div>
+      </footer>
+    <script src="../js/main-login.js"></script>
+    <script src="../js/main-registro.js"></script>
+    <script src="../js/main-carrousel.js"></script>
+    <script src="../js/main-loggin.js"></script>
+</body>
+</html>
