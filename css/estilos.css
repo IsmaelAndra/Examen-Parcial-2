@@ -152,7 +152,7 @@ nav {
     margin-top: 10px;
 }
 
-.form-login input {
+.form-login input [type="text"] {
     color: black;
     width: 98%;
     margin-bottom: 10px;
@@ -312,7 +312,7 @@ option {
     text-align: center;
 }
 
-.form-registro input {
+.form-registro input [type="email"], [type="password"], [type="number"], [type="text"] {
     color: black;
     width: 98%;
     margin-bottom: 10px;

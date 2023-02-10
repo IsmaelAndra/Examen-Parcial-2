@@ -29,3 +29,44 @@ btn_Cerrar_Registro_login.addEventListener('click', () => {
     ventana_Registro_login.close();
     form_Registro_login.reset();
 });
+
+function loguiarse(){
+    let usuario = document.getElementById('input-usuario').value;
+    let password = document.getElementById('input-contrasenia').value;
+    const fiveMinutesInMillis = 5 * 60 * 1000;
+    if (usuario == "Ismael" && password=="Ismael") {
+        ventana_Login.close();
+        Swal.fire({
+            icon: 'success',
+            title: 'Iniciado Sesion con Exito',
+            showConfirmButton: false,
+            time: 1500
+          })
+        setTimeout(pag_inicio, 2000);
+    } else if (usuario == "" || password==""){
+        ventana_Login.close();
+        Swal.fire({
+            icon: 'info',
+            title: 'Oops...',
+            text: 'No está llenado ningun campo o falta uno por llenar',
+          })
+    }
+    else {
+        ventana_Login.close();
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Datos Incorrectos Ingresados',
+          })
+    }
+}
+
+function pag_inicio(){
+    window.location = '../html/inicio.html';
+}
+
+
+function registrarse(){
+    ventana_Registro_login.close();
+    ventana_Login.showModal();
+}

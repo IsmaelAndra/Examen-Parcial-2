@@ -21,11 +21,11 @@
                 <i class="fa-solid fa-bars"></i>
             </label>
             <ul class="nav-menu">
-                <li><a href="./inicio.html">INICIO</a></li>
-                <li><a href="./acerca.html">ACERCA</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-                <li><a><button id="btn-registro">Registro</button></a></li>
-                <li><button id="btn-login">Login</button></li>
+                <li><button id="btn-inicio">INICIO</button></li>
+                <li><button id="btn-acerca">ACERCA</button></li>
+                <li><button id="btn-contacto">CONTACTO</button></li>
+                <li><button id="btn-registro">REGISTRO</button></li>
+                <li><button id="btn-login">LOGIN</button></li>
             </ul>
         </nav>
     </header>
@@ -44,7 +44,7 @@
                 <p class="p-Aun-No-Registrado">
                     <a id="btn-Aun-No-Registrado" class="btn-Aun-No-Registrado">Aun no te has registrado</a>
                 </p>
-                <button class="btn-Iniciar-Sesion" id="btn-Iniciar-Sesion">Iniciar Sesión</button>
+                <input class="btn-Iniciar-Sesion" id="btn-Iniciar-Sesion" type="button" onclick="loguiarse()" value="Iniciar Sesión">
             </form>
         </div>
     </dialog>
@@ -83,12 +83,12 @@
                     </div>
                 </div>
                 <label for="input-correo" class="label-correo">Correo Electronico: </label>
-                <input type="email" name="input-correo" class="input-correo" id="input-correo">
+                <input type="text" name="input-correo" class="input-correo" id="input-correo">
                 <label for="input-contrasenia-registro" class="label-contrasenia-registro">Contraseña: </label>
                 <input type="password" name="input-contrasenia-registro" class="input-contrasenia-registro" id="input-contrasenia-registro">
                 <label for="input-contrasenia-repetir" class="label-contrasenia-repetir">Repetir contraseña: </label>
                 <input type="password" name="input-contrasenia-repetir" class="input-contrasenia-repetir" id="input-contrasenia-repetir">
-                <button class="btn-registrarse" id="btn-registrarse">Registrarse</button>
+                <input class="btn-registrarse" id="btn-registrarse" type="button" onclick="registrarse()" value="Registrarse">
             </form>
         </div>
     </dialog>
@@ -107,6 +107,9 @@
           </div>
           <div class="slide">
             <img src="../img/publicidad-4.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../img/publicidad-5.jpg" alt="" />
           </div>
         </div>
         <div class="slide-controls">
@@ -138,6 +141,7 @@
     <script src="../js/main-login.js"></script>
     <script src="../js/main-registro.js"></script>
     <script src="../js/main-carrousel.js"></script>
-    <script src="../js/main-loggin.js"></script>
+    <script src="../js/main-btn.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
